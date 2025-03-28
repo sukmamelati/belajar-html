@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ST Bhinneka</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .container {
+            width: 60%;
+            margin: auto;
+            border: 1px solid black;
+            padding: 20px;
+        }
+        img {
+            width: 150px;
+            cursor: pointer;
+        }
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        nav ul li {
+            display: inline;
+            margin-right: 10px;
+        }
+        form input, form textarea {
+            display: block;
+            margin-bottom: 10px;
+            width: 100%;
+            max-width: 300px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <!-- Logo ST Bhinneka -->
+    <a href="dashboard.html">
+        <img src="IMG01/logo-universitas-satya-terra-bhinneka.png" alt="ST Bhinneka">
+    </a>
+    <h2>ST Bhinneka</h2>
+    <p>UNIVERSITAS SATYA TERRA BHINNEKA</p>
+
+    <!-- Menu Navigasi -->
+    <h3>Menu Navigasi</h3>
+    <nav>
+        <ul>
+            <li><a href="index.html">Beranda</a></li>
+            <li><a href="visi-misi.html">Tentang Kami</a></li>
+            <li><a href="kontak.html">Hubungi Kami</a></li>
+        </ul>
+    </nav>
+
+    <!-- Formulir Pengguna -->
+    <h3>Formulir Pengguna</h3>
+    <form>
+        Nama: <input type="text" name="nama">
+        Email: <input type="email" name="email">
+        Password: <input type="password" name="password">
+        Alamat: <textarea name="alamat"></textarea>
+
+        Jenis Kelamin: <br>
+        <input type="radio" name="gender" value="Laki-laki"> Laki-laki
+        <input type="radio" name="gender" value="Perempuan"> Perempuan <br><br>
+
+        Usia: <input type="number" name="usia">
+        
+        Hobi: <br>
+        <input type="checkbox" name="hobi" value="Olahraga"> Olahraga
+        <input type="checkbox" name="hobi" value="Musik"> Musik
+        <input type="checkbox" name="hobi" value="Membaca"> Membaca <br><br>
+
+        Pilih Gambar: <input type="file" name="gambar"><br>
+        Tanggal Lahir: <input type="date" name="tanggal_lahir"><br>
+
+        <input type="submit" value="Submit">
+    </form>
+</div>
+
+</body>
+</html>
